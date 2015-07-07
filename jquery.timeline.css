@@ -6,7 +6,6 @@ div.timeline{
 div.timeline_circle{
     position: relative;
     cursor: pointer;
-    background: #fff;
 }
 
 div.timeline_circle_border{
@@ -18,6 +17,7 @@ div.timeline_little_circle{
     background: rgba(255,255,255,0.3);
     z-index: 999;
 }
+
 
 div.timeline_little_circle:hover{
 

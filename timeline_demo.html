@@ -28,9 +28,15 @@
 		$("#time_line_1").timeline({
             callback: function () {
                 $("#time_line_1").meeting({
-                    startTime: "8:30",
-                    duration: "120",
+                    startTime: "12:45",
+                    duration: "60",
                     message: "全体员工大会",
+                    url: "http://www.baidu.com"
+                });
+                $("#time_line_1").meeting({
+                    startTime: "8:15",
+                    duration: "120",
+                    message: "投标研讨会",
                     url: "http://www.baidu.com"
                 });
             }

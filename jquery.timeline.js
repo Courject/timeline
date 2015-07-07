@@ -142,11 +142,11 @@
 	// startTime eg: 9:30
 	$.fn.meeting = function(options){
 		var start_time = options.startTime.split(":");
-		var start_time_hour = start_time[0];
-		var start_time_minute = start_time[1];
+		var start_time_hour = parseInt(start_time[0]);
+		var start_time_minute = parseInt(start_time[1]);
 		var duration = options.duration;
 
-		var start_circle = parseInt(((start_time_hour-opts.startTime) * 60 + start_time_minute) / opts.interval);
+		var start_circle = parseInt((((start_time_hour-opts.startTime) * 60) + start_time_minute) / opts.interval);
 		var line_count = parseInt(duration / opts.interval);
 
 		$(this).find(".timeline_circle[count='"+ start_circle + "']").each(function ()
