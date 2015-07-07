@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="jquery.timeline.css">
+    <script src="jquery-1.11.2.js"></script>
+    <script src="jquery.timeline.js"></script>
+    <style type="text/css">
+        #time_line_1{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo_board">
+        <div id="time_line_1">
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+	$(function () {
+		$("#time_line_1").timeline({
+            callback: function () {
+                $("#time_line_1").meeting({
+                    startTime: "8:30",
+                    duration: "120",
+                    message: "全体员工大会",
+                    url: "http://www.baidu.com"
+                });
+            }
+        });
+	});
+</script>
+</html>

@@ -1,0 +1,1 @@
+﻿This is a TimeLine plugin on purpose to describe the occupied situation of a meeting room.
