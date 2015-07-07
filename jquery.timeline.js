@@ -7,9 +7,9 @@
 	var opts;
 
 	//plugin definition
-	$.fn.timeline = function(options){
+	$.fn.timeline_h = function(options){
 		// build main options before element iteration
-		opts = $.extend({}, $.fn.timeline.defaults, options);
+		opts = $.extend({}, $.fn.timeline_h.defaults, options);
 		// iterate and reformat each matched element
 		return this.each(function () {
 			init($(this), opts);
@@ -226,8 +226,8 @@
 	}
 	
 	// plugin defaults
-	$.fn.timeline.defaults = {
-		type: "vertical",
+	$.fn.timeline_h.defaults = {
+		type: "horizontal",
 		circleDiameter: "20px",
 		lineLength: "50px",
 		lineWidth: "5px",

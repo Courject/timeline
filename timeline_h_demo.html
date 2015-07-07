@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="jquery.timeline_h.css">
+    <script src="jquery-1.11.2.js"></script>
+    <script src="jquery.timeline_h.js"></script>
+    <style type="text/css">
+        #timeline_h_1{
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="timeline_h_1">
+
+    </div>
+<button id="btn">确认</button>
+</body>
+    <script>
+        $(function () {
+            $("#timeline_h_1").timeline_h({
+                callback: function () {
+                    $("#timeline_h_1").meeting({
+                        startTime: "8:45",
+                        duration: "120"
+                    });
+                }
+            });
+        });
+        $("#btn").click(function () {
+            var time = $(this).get_time()
+            alert(time.startTime + "~" + time.endTime)
+        })
+    </script>
+</html>
